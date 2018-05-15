@@ -14,5 +14,5 @@ puts usernames
 
 
 usernames.each do |user|
-  "zmprov ca '#{user}@randomnames.org Pass_123'"
+ system "zmprov ca #{user}@randomnames.org Pass_123"
 end
