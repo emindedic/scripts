@@ -1,8 +1,6 @@
 #!/usr/bin/env ruby
 
-
 require 'faker'
-
 
 usernames = Array.new
 
@@ -11,6 +9,7 @@ usernames = Array.new
   usernames.push str
 end
 
+# print generate usernames
 puts usernames
 
 
