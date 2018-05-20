@@ -9,10 +9,21 @@ usernames = Array.new
   usernames.push str
 end
 
-# print generate usernames
-puts usernames
+while loop do
+  puts 'Enter your domain name:'
+
+  user_input = gets.chomp.capitalize
+  if user_input == ''
+    puts "Please add your domain"
+  elsif
+    system("zmprov cd #{user_input} zimbraAuthMech zimbra")
+  break
+ end
+end
 
 
 usernames.each do |user|
-  system ("zmprov ca #{user}@randomnames.org PassWD_123")
+  system ("zmprov ca #{user}@#{user_input} PassWD_123")
 end
+
+puts "Accounts added"
