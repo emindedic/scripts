@@ -3,7 +3,8 @@
 require 'open3'
 
 puts "Enter domain you want to delete"
-domain = gets.chomp.capitalize
+enter_domain = gets.chomp.capitalize
+domain = "#{enter_domain}"
 
 
 stdout, stderr, status = Open3.capture3("zmprov -l gaa #{domain}")
